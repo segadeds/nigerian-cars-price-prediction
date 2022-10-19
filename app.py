@@ -3,9 +3,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-model = 'model.bin'
+model = pickle.load('model.bin')
 
-preprocess = 'preprocess.bin'
+preprocess = pickle.load('preprocess.bin')
     
 @st.cache()
 
