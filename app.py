@@ -2,6 +2,10 @@ import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+from sklearn.impute import SimpleImputer
 
 pickle_in = open('model.bin', 'rb') 
 model = pickle.load(pickle_in)
