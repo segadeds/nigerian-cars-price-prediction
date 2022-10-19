@@ -3,12 +3,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-with open('model.bin', 'rb') as fi:
-    model = pickle.load(fi)
+model = 'model.bin'
 
-with open('preprocess.bin', 'rb') as fi:
-    preprocess = pickle.load(fi)
-
+preprocess = 'preprocess.bin'
+    
 @st.cache()
 
 def prediction(Year_of_manufacture, Condition, Mileage, Engine_Size, Fuel, Transmission, Build):
