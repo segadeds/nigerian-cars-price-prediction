@@ -2,8 +2,3 @@ pandas
 numpy
 streamlit
 sklearn
-sklearn.pipeline.Pipeline
-sklearn.compose.ColumnTransformer
-sklearn.preprocessing.OneHotEncoder 
-sklearn.preprocessing.MinMaxScaler
-sklearn.impute.SimpleImputer
